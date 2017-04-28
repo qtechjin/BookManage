@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" xmlns:wb="http://open.weibo.com/wb">
 <head>
     <!--<meta http-equiv="content-type" content="text/html;charset=utf-8" >-->
     <!--<meta charset="UTF-8">-->
@@ -25,12 +25,13 @@
         Window.location.href="views/register.html";
     }
     function lighton() {
-        document.getElementById("myimg").src="./views/images/eg_bulbon.gif";
+        document.getElementById("myimg").src="c";
     }
     function lightoff() {
         document.getElementById("myimg").src="./views/images/eg_bulboff.gif";
     }
 </script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 <body>
 <h2>Hello World!</h2>
 
@@ -62,5 +63,8 @@
     </form>
     <a href="">login</a><br>
 <img src="img/eg_bulboff.gif" id="myimg" onmousedown="lighton()" onmouseup="lightoff()">
+
+<wb:share-button addition="simple" type="button" ralateUid="2743259413" default_text="这个灯好漂亮" pic="./views/images/eg_bulbon.gif"></wb:share-button>
+
 </body>
 </html>
