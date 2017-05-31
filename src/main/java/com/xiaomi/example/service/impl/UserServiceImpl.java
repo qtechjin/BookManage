@@ -1,5 +1,6 @@
 package com.xiaomi.example.service.impl;
 
+import com.google.gson.Gson;
 import com.xiaomi.example.dal.repository.UserRepository;
 import com.xiaomi.example.pojo.User;
 import com.xiaomi.example.service.UserService;
@@ -20,6 +21,7 @@ public class UserServiceImpl implements UserService {
         if(user != null && SecurityUtils.md5AndBase64Validate(password, user.getPassword())) {
             return true;
         } else{
+            Gson gson = new Gson();
             return false;
         }
     }
