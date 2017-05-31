@@ -30,6 +30,8 @@ public class UserServiceImpl implements UserService {
         String password = user.getPassword();
         user.setPassword(SecurityUtils.md5AndBase64Encrypt(password));
         if(userRepository.insertUser(user)) {
+            //register a user success and send message to queue
+
             return true;
         } else {
             return false;
