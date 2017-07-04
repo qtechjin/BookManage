@@ -3,4 +3,5 @@ ibator.jar
 ibatorConfig.xml
 maven-spring-test.iml
 mavenspringtest.iml
-target/
+task/target/
+*.iml

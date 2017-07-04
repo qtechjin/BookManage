@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<script type="text/javascript">
+    function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var login_error = document.getElementById("login_error");
+        $.ajax({
+            type: "POST",
+            url: "login",
+            contentType:"application/json;charset=utf-8",
+            dataType: "text",
+            data: JSON.stringify({"username":username, "password":password}),
+            success: function (data) {
+                var json = JSON.parse(data);
+                if(json.result == "OK"){
+                    location.href="loginsuccess.html";
+                    login_error.text="";
+                } else {
+                    alert("no user or password error");
+                    login_error.text="no user or password error";
+                }
+            }
+        });
+
+    }
+</script>
+<body>
+
+<table cellpadding="0" cellspacing="0" width="400">
+    <tr>
+        <td><p align="center">用户名</p></td>
+        <td><input type="text" id="username" value= "" required autofocus></td>
+    </tr>
+    <tr>
+        <td><p align="center">密　码</p></td>
+        <td><input type="password" id="password" required></td>
+    </tr>
+    <tr >
+        <td colspan="2">
+            <p align="center"><button type="button" class="btn btn-common" onclick="login()">login</button>
+                <input name="register" type="button" value="注册" onclick="register.html"></p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
