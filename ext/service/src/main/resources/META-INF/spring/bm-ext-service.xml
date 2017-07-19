@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cache="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+    <!--<bean id="helloService" class="com.xiaomi.example.ext.service.impl.HelloServiceImpl"/>
+
+    <bean id="thriftProcessorFactory" class="org.apache.thrift.protocol.TBinaryProtocol.Factory" >
+
+    </bean>
+    <bean id="serverSocket" class="org.apache.thrift.transport.TServerSocket">
+        <constructor-arg index="0" value="7988" />
+    </bean>
+    <bean id="processor" class="com.xiaomi.example.ext.service.HelloWordService.Processor">
+        <constructor-arg name="iface" value="" />
+    </bean>
+    <bean id="args" class="org.apache.thrift.server.TServer.Args">
+        <constructor-arg index="0" ref="serverSocket"/>
+    </bean>-->
+</beans>

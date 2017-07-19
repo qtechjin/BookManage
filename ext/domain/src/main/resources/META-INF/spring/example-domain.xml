@@ -4,10 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="userRepository" class="com.xiaomi.example.dal.repository.impl.DefaultUserRepository" />
-    <bean id="orderRepository" class="com.xiaomi.example.dal.repository.impl.DefaultOrderRepository" />
-    <bean id="userLogin" class="com.xiaomi.example.service.impl.UserServiceImpl" />
+    <bean id="userRepository" class="com.xiaomi.example.domain.dal.repository.impl.DefaultUserRepository" />
+    <bean id="orderRepository" class="com.xiaomi.example.domain.dal.repository.impl.DefaultOrderRepository" />
+    <bean id="userLogin" class="com.xiaomi.example.domain.service.impl.UserServiceImpl" />
 
-    <bean id="userServlet" class="com.xiaomi.example.servlet.UserServlet" />
-    <bean id="bookServlet" class="com.xiaomi.example.servlet.BookServlet" />
+    <bean id="userServlet" class="com.xiaomi.example.domain.servlet.UserServlet" />
+    <bean id="bookServlet" class="com.xiaomi.example.domain.servlet.BookServlet" />
 </beans>

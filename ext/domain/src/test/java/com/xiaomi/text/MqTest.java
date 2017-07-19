@@ -1,9 +1,9 @@
 package com.xiaomi.text;
 
-import com.xiaomi.example.mq.MessageReceiver;
-import com.xiaomi.example.mq.MessageSender;
-import com.xiaomi.example.mq.Publisher;
-import com.xiaomi.example.mq.Subscriber;
+import com.xiaomi.example.domain.mq.MessageReceiver;
+import com.xiaomi.example.domain.mq.MessageSender;
+import com.xiaomi.example.domain.mq.Publisher;
+import com.xiaomi.example.domain.mq.Subscriber;
 import org.junit.Test;
 
 /**

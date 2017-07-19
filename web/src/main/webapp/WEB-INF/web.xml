@@ -67,41 +67,6 @@
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
 
-  <servlet>
-    <servlet-name>userServletProxy</servlet-name>
-    <servlet-class>com.xiaomi.example.utils.HttpServletProxy</servlet-class>
-    <init-param>
-      <param-name>targetServlet</param-name>
-      <param-value>userServlet</param-value>
-    </init-param>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>userServletProxy</servlet-name>
-    <url-pattern>/servlet/user</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-    <servlet-name>bookServletProxy</servlet-name>
-    <servlet-class>com.xiaomi.example.utils.HttpServletProxy</servlet-class>
-    <init-param>
-      <param-name>targetServlet</param-name>
-      <param-value>bookServlet</param-value>
-    </init-param>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>bookServletProxy</servlet-name>
-    <url-pattern>/servlet/book</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-    <servlet-name>orderServlet</servlet-name>
-    <servlet-class>com.xiaomi.example.servlet.OrderServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>orderServlet</servlet-name>
-    <url-pattern>/servlet/order</url-pattern>
-  </servlet-mapping>
-
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>

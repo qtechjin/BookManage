@@ -6,7 +6,7 @@
     <!--  import data config -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
-            <list><value>classpath:config/c3p0.properties</value></list>
+            <list><value>classpath:config/bm-config.properties</value></list>
         </property>
     </bean>
     <bean id="bgDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
@@ -24,8 +24,8 @@
         <property name="sqlMapClient" ref="bgSqlMapClient" />
         <property name="dataSource" ref="bgDataSource" />
     </bean>
-    <bean id="bookDAO" class="com.xiaomi.example.dal.dao.impl.BookDAOImpl" parent="bgBaseSqlMapClientDAO" />
-    <bean id="orderDAO" class="com.xiaomi.example.dal.dao.impl.OrderDAOImpl" parent="bgBaseSqlMapClientDAO" />
-    <bean id="userDAO" class="com.xiaomi.example.dal.dao.impl.UserDAOImpl" parent="bgBaseSqlMapClientDAO" />
+    <bean id="bookDAO" class="com.xiaomi.example.domain.dal.dao.impl.BookDAOImpl" parent="bgBaseSqlMapClientDAO" />
+    <bean id="orderDAO" class="com.xiaomi.example.domain.dal.dao.impl.OrderDAOImpl" parent="bgBaseSqlMapClientDAO" />
+    <bean id="userDAO" class="com.xiaomi.example.domain.dal.dao.impl.UserDAOImpl" parent="bgBaseSqlMapClientDAO" />
 
 </beans>

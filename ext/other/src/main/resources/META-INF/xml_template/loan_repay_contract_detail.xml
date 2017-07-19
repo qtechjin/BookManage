@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contract_detail>
+    <node name="contract_no" type="String" length="32" format="" need="yes" remark="合同号"></node>
+    <node name="seq_no" type="String" length="64" format="" need="yes" remark="流水号"></node>
+    <node name="withdraw_no" type="String" length="64" format="" need="yes" remark="资金流水号"></node>
+    <node name="repay_type" type="number" length="2" format="%02d" need="yes" remark="还款类型"></node>
+    <node name="repay_date" type="String" length="20" format="yyyy-MM-dd hh:mm:ss" need="yes" remark="还款日期"></node>
+    <node name="amount" type="bigdecimal" length="" format="0.00" need="yes" remark="还款金额"></node>
+
+</contract_detail>

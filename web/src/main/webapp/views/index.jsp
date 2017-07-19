@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=utf-8" language="java" %>
-<%@ page import="com.xiaomi.example.pojo.User" %>
-<%@ page import="com.xiaomi.example.dal.dao.impl.BookDAOImpl" %>
-<%@ page import="com.xiaomi.example.dal.dataobject.BookDO" %>
+<%@ page import="User" %>
+<%@ page import="BookDAOImpl" %>
+<%@ page import="BookDO" %>
 <html>
 <title>测试</title>
 <style>

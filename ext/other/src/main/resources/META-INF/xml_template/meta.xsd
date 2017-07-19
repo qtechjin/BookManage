@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="GB2312"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <!-- task文件校验 -->
+    <xs:element name="task">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ruleId" type="xs:int" />
+                <xs:element name="orgCode" type="xs:int" />
+                <xs:element ref="fileList" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="fileList">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="file" minOccurs="1" maxOccurs="1000"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- file文件校验 -->
+    <xs:element name="file">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="type" type="xs:int"/>
+                <xs:element ref="tradeCodes" minOccurs="1"/>
+                <xs:element ref="orgCodes" minOccurs="1" />
+                <xs:element name="encrypt" type="xs:boolean"/>
+                <xs:element name="fileName" type="xs:string"/>
+                <xs:element name="ruleId" type="xs:int"/>
+                <xs:element name="splitChar" type="xs:string"/>
+                <xs:element name="source" type="xs:string"/>
+                <xs:element ref="lines" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="tradeCodes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="tradeCode" type="xs:int" minOccurs="1" maxOccurs="1000"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="orgCodes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="orgCode" type="xs:int" minOccurs="1" maxOccurs="1000"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="lines">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="headers" />
+                <xs:element ref="contents" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="headers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="columnName" type="xs:string"  minOccurs="1" maxOccurs="1000"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="contents">
+        <xs:complexType>
+            <xs:sequence>
+               <xs:element ref="columnDetail" minOccurs="1" maxOccurs="1000"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="columnDetail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="columnTag" type="xs:string"/>
+                <xs:element name="columnFormat" type="xs:string" minOccurs="0"/>
+                <xs:element name="columnCheckMethod">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="1"/>
+                            <xs:maxInclusive value="16"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="dataMask" type="xs:boolean" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+
+</xs:schema>

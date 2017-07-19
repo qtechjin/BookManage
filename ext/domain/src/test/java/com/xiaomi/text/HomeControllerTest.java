@@ -1,6 +1,6 @@
 package com.xiaomi.text;
 
-import com.xiaomi.example.controller.HomeController;
+import com.xiaomi.example.domain.controller.HomeController;
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 

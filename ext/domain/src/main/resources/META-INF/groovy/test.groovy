@@ -1,6 +1,6 @@
-import com.xiaomi.example.dal.repository.UserRepository
-import com.xiaomi.example.pojo.User
-import com.xiaomi.example.service.FileOpera
+import com.xiaomi.example.domain.dal.repository.UserRepository
+import com.xiaomi.example.domain.pojo.User
+import com.xiaomi.example.domain.service.FileOpera
 import org.springframework.context.ApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext
 

@@ -69,7 +69,7 @@
 
   <servlet>
     <servlet-name>userServletProxy</servlet-name>
-    <servlet-class>com.xiaomi.example.utils.HttpServletProxy</servlet-class>
+    <servlet-class>HttpServletProxy</servlet-class>
     <init-param>
       <param-name>targetServlet</param-name>
       <param-value>userServlet</param-value>
@@ -82,7 +82,7 @@
   
   <servlet>
     <servlet-name>bookServletProxy</servlet-name>
-    <servlet-class>com.xiaomi.example.utils.HttpServletProxy</servlet-class>
+    <servlet-class>HttpServletProxy</servlet-class>
     <init-param>
       <param-name>targetServlet</param-name>
       <param-value>bookServlet</param-value>
@@ -95,7 +95,7 @@
   
   <servlet>
     <servlet-name>orderServlet</servlet-name>
-    <servlet-class>com.xiaomi.example.servlet.OrderServlet</servlet-class>
+    <servlet-class>OrderServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>orderServlet</servlet-name>

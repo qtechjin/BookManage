@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:noNamespaceSchemaLocation="meta.xsd">
+	<ruleId>11</ruleId>
+	<orgCode>12</orgCode>
+	<fileList>
+		<file>loan_detail</file>
+		<file>contract_status</file>
+		<file></file>
+		<file></file>
+	</fileList>						
+</task>
+					
