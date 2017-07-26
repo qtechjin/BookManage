@@ -10,6 +10,7 @@ import javax.annotation.Resource;
 import java.io.File;
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.util.Date;
 
 /**
  * Created by liujin on 2017/7/6.
@@ -22,7 +23,6 @@ public class LogTest extends BaseTest{
 
     @Test
     public void testMem(){
-
 
         int len = 12;
         long xxx = (long)Math.pow(10,len);
