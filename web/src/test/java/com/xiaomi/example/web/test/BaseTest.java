@@ -10,7 +10,7 @@ import org.springframework.util.Log4jConfigurer;
  * Created by liujin on 2017/7/6.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:META-INF/spring/app*.xml")
+@ContextConfiguration("classpath:META-INF/spring/applicationContext-test.xml")
 public class BaseTest {
     private Logger logger = Logger.getLogger(BaseTest.class);
 

@@ -8,7 +8,7 @@
                         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <!-- 注解扫描 -->
-    <context:component-scan base-package="com.xiaomi.example.controller" />
+    <context:component-scan base-package="com.xiaomi.example.domain.controller" />
     <mvc:annotation-driven />
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -25,5 +25,5 @@
     <mvc:resources mapping="/img/**" location="views/images/" />
     <mvc:default-servlet-handler />
     <!-- 公共页面 -->
-    <mvc:view-controller path="/" view-name="/index.html" />
+    <mvc:view-controller path="/" view-name="index.html" />
 </beans>

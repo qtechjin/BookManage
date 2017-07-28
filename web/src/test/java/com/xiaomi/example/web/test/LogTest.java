@@ -1,16 +1,10 @@
 package com.xiaomi.example.web.test;
 
-import com.xiaomi.example.core.common.exception.MyException;
 import com.xiaomi.example.core.service.MemCacheService;
 import org.apache.log4j.Logger;
 import org.junit.Test;
-import org.springframework.util.Assert;
 
 import javax.annotation.Resource;
-import java.io.File;
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.util.Date;
 
 /**
  * Created by liujin on 2017/7/6.

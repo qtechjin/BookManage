@@ -11,10 +11,11 @@
 
 
 
-    <import resource="classpath:META-INF/spring/example-domain.xml" />
+    <import resource="classpath:META-INF/spring/bm-ext-domain.xml" />
     <import resource="classpath:META-INF/spring/data-config.xml" />
     <import resource="classpath:META-INF/spring/cxf-service.xml" />
     <import resource="classpath:META-INF/spring/bm-ext-service.xml" />
+    <import resource="classpath:META-INF/spring/bm-ext-domain.xml" />
     <import resource="classpath:META-INF/spring/bm-core-service.xml" />
 
 </beans>

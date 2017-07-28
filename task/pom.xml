@@ -87,7 +87,7 @@
                         </connector>
                     </connectors>
                     <webAppConfig>
-                        <contextPath>/springexample</contextPath>
+                        <contextPath>/bm-task</contextPath>
                         <jettyEnvXml>src/main/resources/jetty-env.xml</jettyEnvXml>
                     </webAppConfig>
                 </configuration>

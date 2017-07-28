@@ -13,6 +13,17 @@
 
     <import resource="classpath:META-INF/spring/bm-ext-domain.xml" />
     <import resource="classpath:META-INF/spring/data-config.xml" />
-    <import resource="classpath:META-INF/spring/bm-ext-task.xml" />
+    <import resource="classpath:META-INF/spring/cxf-service.xml" />
+    <import resource="classpath:META-INF/spring/bm-ext-service.xml" />
+    <import resource="classpath:META-INF/spring/bm-ext-domain.xml" />
+    <import resource="classpath:META-INF/spring/bm-core-service.xml" />
+    <import resource="classpath:META-INF/spring/bm-core-common.xml" />
+
+    <bean id="testVelocityEngine" parent="contentVelocityTemplate"
+        class="com.xiaomi.example.core.common.utils.ContentVelocityTemplate">
+        <property name="vmLocation" value="myinfo.vm" />
+        <property name="encoding" value="UTF-8" />
+    </bean>
+
 
 </beans>
