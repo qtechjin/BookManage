@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # BookManage
 a test with maven ,spring and spring mvc
 
@@ -29,7 +28,3 @@ test fetch
 this is a branch from dev but not master!
 
 just test commit and merge.
-
-=======
-#BookManage
->>>>>>> 87ca1dd9c1d3638a40a31ac7553eee357cd08f80
