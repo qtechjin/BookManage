@@ -5,6 +5,6 @@
     
     <bean id="helloTask" class="com.xiaomi.example.bm.ext.task.HelloTask" />
     <task:scheduled-tasks>
-        <task:scheduled ref="helloTask" method="execute" cron="0 /4 * * * ?"/>
+        <task:scheduled ref="helloTask" method="execute" cron="0/10 * * * * ?"/>
     </task:scheduled-tasks>
 </beans>

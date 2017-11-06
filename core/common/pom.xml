@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>bm-core-common</artifactId>
-
+    <groupId>com.xiaomi.example.core.common</groupId>
+    <packaging>jar</packaging>
 
 </project>

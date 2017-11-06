@@ -1,9 +1,12 @@
 package com.xiaomi.example.bm.ext.task;
 
+import com.xiaomi.example.core.utils.date.DateUtils;
+import org.apache.log4j.Logger;
 import org.apache.velocity.app.VelocityEngine;
 import org.springframework.ui.velocity.VelocityEngineFactoryBean;
 import org.springframework.ui.velocity.VelocityEngineUtils;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,7 +14,11 @@ import java.util.Map;
  * Created by liujin on 17-6-9.
  */
 public class HelloTask {
+
+    private Logger logger = Logger.getLogger(HelloTask.class);
     public void execute(){
+
+        logger.info("正在执行helloTask--" + DateUtils.getLongDateString(new Date()));
 
         VelocityEngineFactoryBean factoryBean = new VelocityEngineFactoryBean();
         factoryBean.setResourceLoaderPath("classpath:META-INF/velocity");

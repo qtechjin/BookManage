@@ -10,10 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>bm-core-parent</artifactId>
+    <groupId>com.xiaomi.example.core</groupId>
     <packaging>pom</packaging>
     <modules>
         <module>service</module>
         <module>common</module>
+        <module>utils</module>
     </modules>
 
 
